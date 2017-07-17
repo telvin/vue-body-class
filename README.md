@@ -12,8 +12,17 @@ npm install vue-body-class --save
 ## Get started
 
 ```js
+import Router from 'vue-router'
 import vbclass from 'vue-body-class'
-Vue.use( vbclass, { router } )
+Vue.use(Router)
+
+const routers = new Router({
+    mode: 'hash',
+    routes: [
+        { path: '/', component: Home, bodyClass: 'body-custom-class-name-for-Home-route' }
+    ]
+})
+Vue.use(vbclass, routers)
 ```
 
 ### Set Up classes
