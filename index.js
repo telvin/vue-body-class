@@ -75,8 +75,7 @@ class VueBodyClassController {
 
 let VueBodyClass = new VueBodyClassController()
 
-VueBodyClass.install = function (Vue, {router}) {
-
+VueBodyClass.install = function (Vue, router) {
     VueBodyClass.init(router);
 
 }
